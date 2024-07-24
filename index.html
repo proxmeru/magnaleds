@@ -1,86 +1,818 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <meta name="description"
-        content="Cost-effective, durable, versatile, and environmentally friendly lighting solution. Ideal for various outdoor and industrial applications, providing efficiency, durability, and adaptability to different environmental conditions and user needs." />
-
-    <meta name="keywords"
-        content="High mast light, Led flood light, Led street light, Series Hb high bay led" />
-
+    <meta name="description" content="Cost-effective, durable, versatile, and environmentally friendly lighting solution. 
+        Ideal for various outdoor and industrial applications, providing efficiency, durability, and
+         adaptability to different environmental conditions and user needs." />
+    <meta name="keywords" content="High mast light, Led flood light, Led street light, Series Hb high bay led" />
     <meta name="author" content="Proxmeru Tecnologia, E.I" />
-
     <meta name="googlebot" content="..., ..." />
 
-    <title>Magnaleds - Coming Soon</title>
+    <title>Magnaleds</title>
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <style type="text/css">
         body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #1a1a1a;
-            color: white;
+            padding-top: 50px;
+            position: relative;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .jumbotron-billboard .img {
+            opacity: 0.8;
+            background: url("../img/fundos/pxm-background-003.jpg") no-repeat center center;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+
+        }
+
+        .jumbotron h2 {
+            margin-top: 0;
+        }
+
+        .jumbotron {
+            position: relative;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .jumbotron .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        @media screen and (max-width: 768px) {
+            .jumbotron {
+                padding-top: 20px;
+                padding-bottom: 20px;
+
+            }
+        }
+
+        .fax {
+            padding: 13px;
+            font-size: 30px;
+            width: 89px;
             text-align: center;
-        }
-
-        .container {
-            max-width: 600px;
-            padding: 20px;
-            background-color: #333;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-        }
-
-        .logo {
-            max-width: 300px;
-            margin: 0 auto 20px;
-            margin-top: -80px;
-            display: block;
-        }
-
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 0.5em;
-        }
-
-        p {
-            font-size: 1.2em;
-            margin-bottom: 1.5em;
-        }
-
-        .contact-info {
-            font-size: 1em;
-            color: #a9a9a9;
-        }
-
-        .contact-info a {
-            color: #ffcc00;
             text-decoration: none;
+            margin: 5px 2px;
         }
 
-        .contact-info a:hover {
-            text-decoration: underline;
+        .fax:hover {
+            opacity: 0.7;
         }
+
+        .fax-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fax-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .fax-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+
+        .fax-instagram {
+            background: #2e5e86;
+            color: white;
+        }
+
+        .fax-whatsapp {
+            background: #25D366;
+            color: white;
+        }
+
+        .fax-skype {
+            background: #00aff0;
+            color: white;
+        }
+
+        .fax-vimeo {
+            background: #45bbff;
+            color: white;
+        }
+
+        .navbar-nav .nav-item .nav-link {
+            color: white;
+        }
+
+        .navbar-nav .nav-item .nav-link:hover {
+            color: #FFE500;
+        }
+
+        .about-us-section {
+            background-color: #fff;
+            color: #333;
+            padding: 70px 0;
+        }
+
+        .about-us-section img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .pageAlign {
+            background-image: url('img/img6.png');
+        }
+
+        .mission-section h1 {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .mission-section p {
+            font-size: 15pt;
+        }
+
+        .pageAlign {
+            text-align: left;
+            margin-bottom: 40px;
+        }
+
+        .pageAlign h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .pageAlign h2 span {
+            display: block;
+            font-size: 24px;
+            color: #666;
+        }
+
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            /* Centraliza as colunas dentro da linha */
+        }
+
+        .column {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            text-align: left;
+            /* Alinha o texto dentro das colunas à esquerda */
+        }
+
+        .icon {
+            text-align: center;
+            /* Centraliza o ícone dentro da coluna */
+        }
+
+        .icon img {
+            width: auto;
+            height: 70px;
+            margin-bottom: 15px;
+        }
+
         .content {
-            margin-top: -100px
+            text-align: left;
+            /* Alinha o texto dentro da coluna à esquerda */
+        }
+
+        .content h4 {
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        .content p {
+            color: #000;
         }
     </style>
+
 </head>
-<body>
-    <div class="container">
-        <img src="logo.png" alt="Magna LEDs Logo" class="logo">
-        <div class="content">
-            <p>Our website is under construction. We'll be here soon with our new awesome site and services.</p>
-        <p class="contact-info">For more information, contact us at <a href="mailto:info@magnaleds.com">info@magnaleds.com</a></p>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar fixed-top navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://magnaleds.com">
+                <img src="logo.png" alt="Logo" height="50" width="100%" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto flex-nowrap">
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="#sessao1">About Us</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="#sessao2">Products</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="#sessao4">Supplier Form</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="#sessao5">Quality Policy</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="#sessao6">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="width: 100%;">
+                <img src="img/img1.png" class="d-block w-100" alt="...">
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h1>LED lights for road and highway</h1>
+                        <p>LED lights up the streets of your city in a safe and sustainable way. Made in Italy light
+                            fixtures for efficient and performing LED street lighting. </p>
+                        <p><a class="btn btn-primary" href="#sessao4">Contact us</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item" style="width: 100%;">
+                <img src="img/img2.png" class="d-block w-100" alt="...">
+                <div class="container">
+                    <div class="carousel-caption text-end">
+                        <h1>Lamps for street lighting</h1>
+                        <p>High Quality LED Street Lights
+                        </p>
+                        <p><a class="btn btn-primary" href="#sessao4">Contact us</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" style="width: 100%;">
+                <img src="img/img3.png" class="d-block w-100" alt="...">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Outdoor urban and street lighting</h1>
+                        <p>The requirements of good street lighting</p>
+                        <p><a class="btn btn-primary" href="#sessao4">Contact us</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" style="width: 100%;">
+                <img src="img/img4.png" class="d-block w-100" alt="...">
+                <div class="container">
+                    <div class="carousel-caption text-end">
+                        <h1>DS pole for outdoor lighting</h1>
+                        <p>Mainly used for post-top installations</p>
+                        <p><a class="btn btn-primary" href="#sessao4">Contact us</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
+
+    <div id="sessao1" class="container" style="scroll-margin-top: 4rem;">
+
+        <section class="about-us-section" style="text-align: justify">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3><strong>Our Way</strong></h3>
+                        <p><span style="font-size: 12pt;text-align: justify;">
+                                Magnaleds is a leading company in the sale of LED lighting solutions, including LED High
+                                Mast Light, LED Flood Light, LED Street Light, and Series HB High Bay LED. With a deep
+                                commitment to excellence and innovation, Magnaleds recognizes the immense potential for
+                                development and growth in various markets.
+                                <br><br>
+                                As a company dedicated to providing efficient and sustainable lighting, we believe that
+                                our experience and knowledge can significantly contribute to infrastructure progress. We
+                                have vast expertise in delivering lighting solutions that promote energy efficiency and
+                                sustainability.
+                                <br><br>
+                                We see great potential to apply our expertise and drive similar development as we have
+                                experienced in other markets. Magnaleds is committed to illuminating a brighter and more
+                                sustainable future, promoting economic and social benefits for all.
+                            </span></p>
+                    </div>
+
+                    <div class="col-md-6">
+                        <img src="img/img5.png" alt="A man wearing a helmet is standing in a cave.">
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="mission-section" style="background-color:#343a40; color: #fff; padding: 3%;">
+                    <div class="container">
+                        <div class="text-content">
+                            <h1><strong>Our Mission & Vision</strong></h1>
+                            <p>Lighting the Future, Empowering Communities
+                                <br>
+                                Magnaleds is a thriving company dedicated to illuminating spaces, creating value, and
+                                promoting sustainable development. We focus on providing top-tier LED lighting solutions
+                                that not only brighten environments but also contribute to the overall well-being of
+                                communities. Our commitment to innovation and excellence drives us to lead in the market
+                                and make a lasting positive impact.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="pageAlign">
+                    <br>
+                    <h2 style="text-align: center;color: #fff;"><strong>Values</strong></h2>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="column">
+                                    <div class="icon">
+                                        <img src="https://www.jindalafrica.com/wp-content/uploads/2023/06/icon.png"
+                                            alt="Position for the future">
+                                    </div>
+                                    <div class="content">
+                                        <h4><span style="font-size: 24pt;">Position for the future</span></h4>
+                                        <p><span style="color: #000000;">As we look ahead, Magnaleds is determined to
+                                                embrace innovation and sustainability, becoming a pioneer in the
+                                                lighting industry's transformation towards responsible and efficient
+                                                solutions. Our vision is to be recognized as a global leader in advanced
+                                                lighting technologies, environmental stewardship, and community
+                                                empowerment.</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="column">
+                                    <div class="icon">
+                                        <img src="https://www.jindalafrica.com/wp-content/uploads/2023/07/globe.svg"
+                                            alt="Taking action on climate">
+                                    </div>
+                                    <div class="content">
+                                        <h4><span style="font-size: 24pt;">Taking action on climate</span></h4>
+                                        <p><span style="color: #000000;">Climate change is one of the most pressing
+                                                issues of our time, and it requires a collective effort from
+                                                governments, businesses, and communities to address it effectively. As
+                                                part of the global community, Magnaleds is fully dedicated to embracing
+                                                sustainable practices and reducing our carbon footprint throughout our
+                                                operations.</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="column">
+                                    <div class="icon">
+                                        <img src="https://www.jindalafrica.com/wp-content/uploads/2023/09/the-right-way.png"
+                                            alt="Doing it the right way">
+                                    </div>
+                                    <div class="content">
+                                        <h4><span style="font-size: 24pt;">Doing it the right way</span>
+                                        </h4>
+                                        <p><span style="color: #000000;">At Magnaleds, we believe that our
+                                                actions must always align with our core values. Our
+                                                commitment to integrity and accountability is unwavering, and we
+                                                recognize that doing what is right goes beyond mere statements – it is
+                                                the solid and enduring foundation upon which we build lasting trust and
+                                                meaningful relationships with our communities.</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="column">
+                                    <div class="icon">
+                                        <img src="https://www.jindalafrica.com/wp-content/uploads/2023/10/our-work-matters.png"
+                                            alt="Our work does matter">
+                                    </div>
+                                    <div class="content">
+                                        <h4><span style="font-size: 24pt;">Why our work matters</span></h4>
+                                        <p><span style="color: #000000;">Our work at Magnaleds is not just about
+                                                providing lighting solutions but about making a positive impact on
+                                                society, the environment, and the economy. By consistently striving for
+                                                excellence in sustainability, community engagement, and ethical
+                                                practices, we are determined to be a force for positive change, leaving
+                                                a legacy of responsible lighting.</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
     </div>
+
+    <div id="sessao2" class="card" style="margin-top: -70px; scroll-margin-top: 4.3rem; border: 0px; color: #fff">
+        <div class="card-body"
+            style="background-color: #343a40; padding-top: 25px; padding-left: 5%; padding-right: 5%">
+            <h1 class="card-title">Products</h1>
+            <p class="card-text" style="text-align: justify;">
+                As a leading manufacturer of LED lighting solutions, Magnaleds boasts a highly professional and
+                experienced lighting design team. We specialize in complex lighting simulation design, planning,
+                calculation, and visualization for both indoor and outdoor areas. Whether it's for an entire building,
+                various spaces, outdoor parking areas, or road lighting, our solutions are tailored to meet diverse
+                needs.
+
+                Utilizing the latest lighting design software, including DIALUX and DIALUX EVO, our expert team provides
+                rapid simulations for your project at any time, offering the most effective and reasonable
+                recommendations.</p>
+            <div class="row row-cols-1 row-cols-md-4" style="margin-top: 20px">
+
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="https://www.zgsm-china.com/wp-content/uploads/2021/11/glomax-menu.png"
+                            class="card-img-top" alt="..." style="width: 100%; height: 100%">
+                        <div class="card-body">
+                            <h5 class="card-title">High Mast Light</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="https://www.zgsm-china.com/wp-content/uploads/2021/12/zoom-1.png.webp"
+                            class="card-img-top" alt="..." style="width: 100%; height: 100%">
+                        <div class="card-body">
+                            <h5 class="card-title">LED Flood Light</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="https://www.zgsm-china.com/wp-content/uploads/2024/05/streetlight.png"
+                            class="card-img-top" alt="..." style="width: 100%; height: 100%">
+                        <div class="card-body">
+                            <h5 class="card-title">LED Street Light</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="https://www.zgsm-china.com/wp-content/uploads/2023/08/helios-1.png.webp"
+                            class="card-img-top" alt="..." style="width: 100%; height: 100%">
+                        <div class="card-body">
+                            <h5 class="card-title">Series HB High Bay Led</h5>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div id="sessao3"
+        style="background-color: #fff;scroll-margin-top: 3rem;padding-top: 25px; padding-left: 5%; padding-right: 5%;text-align: justify;">
+
+        <h1><strong>High Mast Light</strong></h1>
+        <div class="p1"
+            style="color: #fff;padding: 5%;background-image: url('https://www.zgsm-china.com/wp-content/uploads/2021/11/high-mast-light.jpg.webp');">
+            <div class="container">
+                <div class="text-content">
+                    <h1><strong>&nbsp;</strong></h1>
+                </div>
+            </div>
+        </div>
+        <br>
+        <p>We carry both high mast Light and LED Sports Lighting that is great for indoor and outdoor sports arenas and
+            stadiums. LEDs offer a number of advantages over traditional metal halide and HID fixtures. LEDs are sure to
+            save you money on energy and maintenance costs as they consume less power and last 4-5 times longer than
+            traditional lights. LEDs also run much cooler than HID and metal halide bulbs, reducing the strain on air
+            conditioning systems. Another great advantage of football stadium lighting is they do not buzz or flicker
+            like traditional lighting systems.</p>
+        <br>
+
+        <h1><strong>LED Street Light</strong></h1>
+        <div class="p1"
+            style="color: #fff;padding: 5%;background-image: url('https://www.zgsm-china.com/wp-content/uploads/2021/10/banner-1024x254.png.webp');">
+            <div class="container">
+                <div class="text-content">
+                    <h1><strong>&nbsp;</strong></h1>
+                </div>
+            </div>
+        </div>
+        <br>
+        <p>If you are looking for high-power, high-quality lighting solutions for your outdoor space, check out our wide
+            selection of LED Street lights. The perfect companion to streets, parking lots, and any other wide-open area
+            in need of a high volume of light LED roadway lights will provide the illumination you need in any
+            environment. Made specifically to withstand the rigors of Outdoor Street lights, they will remain durable
+            and reliable through any weather, withstanding moisture, debris, and other hazards to continue to provide
+            great visibility for you and your customers and clients every day. We can also equip you with a smart street
+            lighting control system to achieve green smart lighting. As the top manufacturer of LED street lights in
+            China, ZGSM can provide various styles of LED street lights with complete certification, excellent
+            performance, and competitive price, suitable for various municipal road bidding projects.</p>
+        <br>
+
+        <h1><strong>LED Flood Light</strong></h1>
+        <div class="p1"
+            style="color: #fff;padding: 5%;background-image: url('https://www.zgsm-china.com/wp-content/uploads/2021/11/led-flood-light.jpg.webp');">
+            <div class="container">
+                <div class="text-content">
+                    <h1><strong>&nbsp;</strong></h1>
+                </div>
+            </div>
+        </div>
+        <br>
+        <p>ZGSM offers a wide range of floodlights for use in area lighting, sports lighting, parking lot lighting,
+            billboard lighting, and perimeter security lighting. Outdoor flood lights with full power ranges and
+            symmetric or asymmetric beam angles can satisfy most applications’ needs. They are ideal illuminating for
+            any outdoor area as well as dramatically reducing energy consumption. There are many ways for installing
+            flood lights. Select an appropriate installation method based on actual requirements.</p>
+        <br>
+
+        <h1><strong>LED High Bay Light</strong></h1>
+        <div class="p1"
+            style="color: #fff;padding: 5%;background-image: url('https://www.zgsm-china.com/wp-content/uploads/2021/11/led-high-bay-light.jpg.webp');">
+            <div class="container">
+                <div class="text-content">
+                    <h1><strong>&nbsp;</strong></h1>
+                </div>
+            </div>
+        </div>
+        <br>
+        <p>A factory is a place of high energy consumption, due to the production needs, the general lighting time is
+            more than 12 hours, some even 24 hours of uninterrupted work, so the lifetime and energy saving rate
+            requirements for industrial lights is very high, ZGSM LED high bay light with high light efficiency brand
+            LED chips, luminaire system efficiency up to 190 lm/w, the use of well-known brand LED driver, the Life span
+            can reach 100,000 hours. ZGSM, as a professional high bay light manufacturer, has helped customers to
+            renovate a large number of workshop lighting in the past 16 years. With the continuous improvement of light
+            efficiency, it can now achieve 100W LED workshop light to replace 400W traditional metal halogen lamp with
+            higher lux value on the floor. High bay LED light can also use in warehouses, garages, commercial
+            facilities, aisles (open & stock), field houses & gymnasiums and etc.</p>
+    </div>
+    <br><br>
+
+    <div id="sessao4" class="card" style="margin-top: -32px; scroll-margin-top: 4rem; border: 0px; color: #fff">
+        <div class="card-body"
+            style="background-color: #343a40; padding-top: 25px; padding-left: 5%; padding-right: 5%">
+            <h1 class="card-title">Get In Touch</h1>
+            <p class="card-text" style="text-align: justify;">
+                Please fill out the form below for more information or to inquire about purchasing our LED lighting
+                solutions. Our team will be happy to assist you with any queries and help you find the perfect lighting
+                solutions for your needs.</p>
+            <form class="row g-3" action="mailto:info@magnaleds.com" method="POST">
+                <div class="col-md-4">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" placeholder="First name" name="name" aria-label="First name"
+                        id="name">
+                </div>
+                <div class="col-md-4">
+                    <label for="lastname" class="form-label">Last name</label>
+                    <input type="text" class="form-control" placeholder="Last name" name="lastname"
+                        aria-label="Last name" id="lastname">
+                </div>
+                <div class="col-md-4">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="name@yourcompany.com">
+                </div>
+                <div class="col-md-4">
+                    <label for="company" class="form-label">Company</label>
+                    <input type="text" class="form-control" id="company" name="company" placeholder="Your company">
+                </div>
+                <div class="col-md-4">
+                    <label for="address" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="address" name="address"
+                        placeholder="Apartment, office, or floor.">
+                </div>
+
+                <div class="col-md-4">
+                    <label for="city" class="form-label">City</label>
+                    <input type="text" class="form-control" id="city" name="city" placeholder="City, state, or region.">
+                </div>
+
+                <div class="col-md-12">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="3"
+                        placeholder="Leave your message"></textarea>
+                </div>
+
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Request</button>
+                </div>
+            </form>
+
+            <br>
+        </div>
+
+    </div>
+
+    <div id="sessao5"
+        style="background-color: #fff; scroll-margin-top: 4rem; padding-top: 25px; padding-left: 5%; padding-right: 5%;">
+
+        <h1 class="card-title">Quality policy</h1>
+        <br>
+        <p class="lead">Magnaleds is committed to providing high-quality products
+            and services to meet the needs of our customers. To achieve
+            this, we are committed to:<br>
+            1. Providing products and services that meet or exceed our customers' expectations.<br>
+            <span class="opacity-75">2. Continuously improving our products and services through innovation and
+                investment in technology.</span><br>
+            <span class="opacity-50">3. Ensuring that our products and services are delivered within the established
+                timeframe and in an efficient manner.</span><br>
+            <span class="opacity-25">4. Working with reliable and quality suppliers to ensure that the products and
+                services provided are of high quality.</span>
+        </p>
+
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+            data-bs-target="#politicaDeQualidadeIngles">
+            Read more
+        </button>
+    </div>
+
+    <br>
+
+    <footer id="sessao6" class="page-footer font-small" style="color: #000;scroll-margin-top: 4.5rem;border-top:1px solid #fff">
+
+        <div style="background-color: #343a40;padding-right: 5%;padding-left: 5%;">
+            <div>
+                <div class="row py-4 d-flex align-items-center">
+
+                    <div class=" text-left text-md-left mb-4 mb-md-0">
+                        <h6 class="mb-0" style="color: #fff">Save energy for tomorrow!</h6>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center text-md-left mt-5" style="padding-right: 5%;padding-left: 5%;">
+
+            <div class="row mt-3">
+
+                <div class="col-md-3 col-lg-4 col-xl-5 mb-4" style="text-align:left">
+
+                    <h6 class="text-uppercase font-weight-bold">Magnaleds</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>Magnaleds is a leading company in the lighting sector, specializing in the import and
+                        distribution of LED lighting solutions, including equipment for indoor and outdoor environments
+                        such as LED High Mast Light, LED Flood Light, LED Street Light, and Series HB High Bay LED.</p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mb-4" style="text-align:left">
+
+                    <h6 class="text-uppercase font-weight-bold">Products</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p><a style="text-decoration: none; color: #000" href="#sessao3">LED High Mast Light</a></p>
+                    <p><a style="text-decoration: none; color: #000" href="#sessao3">LED Flood Light</a></p>
+                    <p><a style="text-decoration: none; color: #000" href="#sessao3">LED Street Light</a></p>
+                    <p><a style="text-decoration: none; color: #000" href="#sessao3">HB High Bay LED</a></p>
+
+                </div>
+
+                <div class="col-md-3 col-lg-2 col-xl-2 mb-4" style="text-align:left">
+
+                    <h6 class="text-uppercase font-weight-bold">USEFUL LINKS</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="#sessao1" style="text-decoration: none;color: #000">About Us</a>
+                    </p>
+                    <p>
+                        <a href="#sessao2" style="text-decoration: none;color: #000">Products</a>
+                    </p>
+                    <p>
+                        <a href="#sessao4" style="text-decoration: none;color: #000">Supplier Form</a>
+                    </p>
+                    <p>
+                        <a href="#sessao3" style="text-decoration: none;color: #000">Quality Policy</a>
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mb-md-0 mb-4" style="text-align:left">
+
+                    <h6 class="text-uppercase font-weight-bold">Contacts</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fa fa-envelope mr-3"></i> info@magnaleds.com
+                    </p>
+
+                </div>
+            </div>
+            <br>
+            <hr style="margin-top: -20px">
+            <br>
+            <form action="mailto:info@magnaleds.com" method="POST">
+
+                <div class="row">
+                    <div class="col-xl-8 col-lg-10 mx-auto">
+                        <h2 class="font-weight-bold mb-3">Subscribe to our newsletter</h2>
+                        <h6 class="text-black-50 mb-3 text-color">Sign up for our newsletter and never miss our latest
+                            news and equipment updates.</h6>
+                    </div>
+
+                    <div class="row g-6 text-center justify-content-center">
+
+                        <div class="col-md-4">
+                            <input type="email" style="text-align:center" id="form-newsletter-email"
+                                name="newsletter_email" class="form-control pl-2 shadow-none"
+                                placeholder="Enter your email address" required>
+                        </div>
+
+                        <div class="col-auto">
+                            <button class="btn btn-block btn-dark" type="submit" id="enviar-form-newsletter"
+                                aria-describedby="form-newsletter-emailAjuda">SUBSCRIBE!
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </form>
+            <hr>
+        </div>
+        <div class="footer-copyright text-center py-3" style="color: #000">© 2023 Magnaleds
+            <br>Developed by <a href="https://proxmeru.com" target="_blank"><span
+                    style="text-decoration: underline;">Proxmeru Technology</span></a>
+        </div>
+
+    </footer>
+
+    <div class="modal fade" id="politicaDeQualidadeIngles" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Quality Policy of Magnaleds
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead" style="padding-left:2%;padding-right:2%">
+                        Magnaleds is committed to providing high-quality products
+                        and services to meet the needs of our customers. To achieve
+                        this, we are committed to:<br><br>
+                        1. Providing products and services that meet or exceed our customers'
+                        expectations.<br>
+                        2. Continuously improving our products and services through innovation and
+                        investment in technology.<br>
+                        3. Ensuring that our products and services are delivered within the
+                        established timeframe and in an efficient manner.<br>
+                        4. Working with reliable and quality suppliers to ensure that the products and
+                        services provided are of high quality.<br>
+                        5. Ensuring that our team is highly trained and capable of providing efficient
+                        and quality service to our customers.<br>
+                        6. Complying with applicable regulatory and legal requirements to our
+                        business.<br>
+                        7. Implementing and maintaining a Quality Management System that meets
+                        the requirements of ISO 9001:2015.<br><br>
+                        Premium Healthcare Solutions is committed to continuously improving our
+                        processes and products, ensuring customer satisfaction, and a safe and healthy
+                        work environment.
+                    </p>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
+
 </html>
